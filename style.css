@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 601px) {
+  .main {
+    width: 500px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main .image-1 {
+    width: 250px;
+    border-radius: 10px 0px 0px 10px;
+    background-image: url(images/image-product-desktop.jpg);
+  }
+}
+.container {
+  display: grid;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+.container .main {
+  border-radius: 10px;
+  line-height: 1;
+  margin: auto;
+  display: grid;
+  background-color: white;
+}
+.container .main .image-1 {
+  background-size: cover;
+}
+.container .main .textClass {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.container .main .textClass .perfume {
+  font-size: medium;
+  font-family: Montserrat;
+  font-weight: 400;
+  padding-bottom: 20px;
+  color: gray;
+}
+.container .main .textClass .styledText {
+  padding-bottom: 20px;
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 25px;
+  padding-right: 19px;
+}
+.container .main .textClass p {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: gray;
+}
+.container .main .textClass .price {
+  display: flex;
+}
+.container .main .textClass .price .discount {
+  font-family: Fraunces;
+  color: rgb(29, 153, 29);
+  font-size: large;
+  padding: 10px;
+}
+.container .main .textClass .price .pric {
+  font-size: small;
+  padding: 10px;
+  padding-top: 14px;
+  text-decoration: line-through;
+}
+.container .main .textClass button {
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+}
+.container .main .textClass button:hover {
+  background-color: rgb(5, 149, 5);
+}
+.container .main .textClass button img {
+  padding-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 250px;
+    height: 520px;
+    line-height: 1;
+  }
+  .main .image-1 {
+    border-radius: 10px 10px 0px 0px;
+    background: url(images/image-product-mobile.jpg);
+    height: 200px;
+  }
+}/*# sourceMappingURL=style.css.map */
